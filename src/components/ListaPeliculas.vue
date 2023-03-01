@@ -1,6 +1,9 @@
 <template>
   <v-row>
-    <v-col class="mt-12 mx-6">
+    <v-col cols="12" class="text-h4 text--primary mt-12 mx-6">
+      Peliculas de Start Wars
+    </v-col>
+    <v-col cols="12" class="mt-12 mx-6">
       <v-card
         v-for="(pelicula, i) in listaPeliculas"
         :key="i"

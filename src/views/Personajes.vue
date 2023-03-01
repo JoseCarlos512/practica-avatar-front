@@ -1,5 +1,8 @@
 <template>
   <v-row style="margin-top: 10px">
+    <v-col cols="12" class="text-h4 text--primary mt-12 mx-6">
+      Lista de Actores que participaron en la pelicula
+    </v-col>
     <v-col
       cols="12"
       md="4"
@@ -47,12 +50,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.v-card--reveal {
-  bottom: 0;
-  opacity: 1 !important;
-  position: absolute;
-  width: 100%;
-}
-</style>

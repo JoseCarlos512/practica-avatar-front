@@ -3,17 +3,17 @@
     <v-card-text @click="goListaPeliculasPersonaje(pelicula.episode_id)">
       <div>birth_year: {{ personaje.birth_year }}</div>
       <p class="text-h4 text--primary">{{ personaje.name }}</p>
-      <p>Gender: {{ personaje.gender }}</p>
-      <p>eye_color {{ personaje.eye_color }}</p>
-      <p>hair_color {{ personaje.hair_color }}</p>
-      <p>height {{ personaje.height }}</p>
+      <p>Sexo: {{ personaje.gender }}</p>
+      <p>Color de ojos: {{ personaje.eye_color }}</p>
+      <p>Color de cabello {{ personaje.hair_color }}</p>
+      <p>Altura {{ personaje.height }}</p>
 
-      <p>created {{ personaje.created }}</p>
-      <p>edited {{ personaje.edited }}</p>
+      <p>Fecha Creacion {{ personaje.created }}</p>
+      <p>Fecha Actualizacion {{ personaje.edited }}</p>
     </v-card-text>
     <v-card-actions>
       <v-btn variant="text" color="teal-accent-4" @click="reveal = true">
-        Learn More
+        Leer mas...
       </v-btn>
     </v-card-actions>
 
@@ -24,7 +24,7 @@
         style="height: 100%"
       >
         <v-card-text class="pb-0">
-          <p class="text-h4 text--primary">Peliculas que interpreto</p>
+          <p class="text-h4 text--primary">Peliculas que participo</p>
           <p v-for="(pelicula, index) in personaje.films" :key="index">
             <ActorPeliculas :url="pelicula" />
           </p>
